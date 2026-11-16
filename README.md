@@ -14,33 +14,57 @@ Repositorio público de distribución del complemento **NHANDU MOVIES / Jellyfin
 
 - Jellyfin Server 12.2.0
 - Linux x64 / Docker
-- Jellyfin Web para la administración y el catálogo propio
+- Jellyfin Web para la administración, catálogo propio y carteles promocionales dentro del catálogo.
 
 No se declara compatibilidad con Android, Android TV, iOS, televisores ni clientes de terceros hasta realizar pruebas específicas.
 
-## Dependencias opcionales de integración web
+## Complementos necesarios
 
-El complemento puede cargarse sin estos complementos adicionales. Para activar la experiencia web completa se necesitan versiones compatibles con Jellyfin 12.2.0 de:
+Este repositorio incluye tres entradas en el catálogo para que puedas encontrarlos desde una sola dirección:
 
-- **File Transformation**: necesario para inyectar el cliente web, servir las rutas virtuales del catálogo y habilitar los carteles.
-- **Plugin Pages**: necesario para añadir NHANDU MOVIES al menú habitual de usuario.
+| Complemento | Versión Jellyfin 12.2 | Función |
+|---|---:|---|
+| File Transformation | 3.0.3.0 | Permite integrar transformaciones en Jellyfin Web sin modificar los archivos originales del cliente. |
+| Plugin Pages | 3.0.3.0 | Permite añadir NHANDU MOVIES al menú de usuario. Necesita File Transformation. |
+| NHANDU MOVIES | 0.2.0.0 | Administración de etiquetas y catálogo ordenado por año. |
 
-Sin estas dependencias, la página de administración del complemento seguirá disponible, pero las integraciones visuales y el acceso de usuario al catálogo no estarán activos. Jellyfin no instala automáticamente estas dependencias al instalar NHANDU MOVIES desde un repositorio.
+Los dos primeros son complementos de terceros desarrollados por **IAmParadox27**. Sus paquetes se descargan directamente de sus publicaciones originales de GitHub; este repositorio no vuelve a empaquetarlos ni modifica sus binarios.
 
-## Instalación
+**Importante:** Jellyfin no instala automáticamente las dependencias declaradas por otros complementos. Por eso debes instalar los tres desde el catálogo, en este orden:
 
-1. En Jellyfin, abre **Panel de control → Complementos → Repositorios**.
+1. File Transformation.
+2. Plugin Pages.
+3. NHANDU MOVIES.
+
+Puedes instalar los tres antes de reiniciar Jellyfin. Cuando los tres aparezcan como instalados y Jellyfin solicite reinicio, reinicia el servidor una sola vez desde Portainer.
+
+## Instalación desde Jellyfin
+
+1. Abre **Panel de control → Complementos → Repositorios**.
 2. Añade esta dirección:
    `https://raw.githubusercontent.com/amartinyp/NHANDU-MOVIES-Repository/main/manifest.json`
-3. Guarda el repositorio y consulta el catálogo de complementos.
-4. Antes de instalar en el servidor principal, realiza una copia de seguridad de la configuración y confirma que las dependencias opcionales están resueltas si quieres la experiencia web completa.
+3. Guarda el repositorio y abre el catálogo.
+4. Instala los tres complementos siguiendo el orden anterior.
+5. Reinicia Jellyfin una vez, cuando hayas terminado las tres instalaciones.
 
-La publicación actual es una versión de pruebas. No instales todavía el complemento en el servidor principal: primero debemos cerrar y probar el procedimiento de instalación y reversión para tu entorno Docker/Portainer.
+La publicación actual es una versión de pruebas. Antes de instalar en el servidor principal, realiza una copia de seguridad de la configuración. No cambies la imagen Docker, los volúmenes ni los archivos multimedia.
 
-## Privacidad del proyecto
+## Qué modifica NHANDU MOVIES
 
-Este repositorio contiene únicamente material público de distribución y documentación. El código fuente permanece en el repositorio privado de desarrollo.
+- Guarda las etiquetas y asignaciones en la configuración propia del complemento.
+- Dibuja las etiquetas sobre las carátulas dentro del catálogo NHANDU MOVIES.
+- Ordena por año de estreno descendente y, en caso de empate, por título alfabético.
+- No modifica los archivos multimedia, las imágenes originales ni los metadatos de Jellyfin.
 
-## Aviso
+La ordenación por año afecta únicamente al catálogo NHANDU MOVIES, no a todas las pantallas nativas de Jellyfin.
 
-Un complemento se ejecuta dentro del proceso de Jellyfin. Haz siempre una copia de seguridad de la configuración antes de instalarlo y conserva un procedimiento de reversión.
+## Privacidad y atribuciones
+
+El código fuente de NHANDU MOVIES permanece en el repositorio privado de desarrollo. Los complementos File Transformation y Plugin Pages mantienen sus propias licencias y autoría; sus binarios se descargan desde los repositorios originales:
+
+- https://github.com/IAmParadox27/jellyfin-plugin-file-transformation
+- https://github.com/IAmParadox27/jellyfin-plugin-pages
+
+## Aviso de seguridad
+
+Un complemento se ejecuta dentro del proceso de Jellyfin. Haz siempre una copia de seguridad de la configuración antes de instalarlo y conserva un procedimiento de reversión. No instales esta versión de pruebas en el servidor principal hasta que hayas revisado el plan de instalación y copia de seguridad.
