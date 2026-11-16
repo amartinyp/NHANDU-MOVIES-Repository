@@ -4,10 +4,11 @@ Repositorio público de distribución del complemento **NHANDU MOVIES / Jellyfin
 
 ## Estado
 
-**Primera versión de pruebas publicada: 0.2.0.0.**
+**Versión estable publicada: 1.0.0.0.**
 
-- Release: https://github.com/amartinyp/NHANDU-MOVIES-Repository/releases/tag/v0.2.0.0
-- Paquete: `NHANDU-MOVIES-0.2.0.0.zip`
+- Tag: https://github.com/amartinyp/NHANDU-MOVIES-Repository/tree/v1.0.0.0
+- Paquete Jellyfin directo: `NHANDU-MOVIES-1.0.0.0.zip`
+- Bundle manual separado: `NHANDU-MOVIES-1.0.0.0-manual-installer.zip` (generado por CI)
 - Manifiesto del repositorio: https://raw.githubusercontent.com/amartinyp/NHANDU-MOVIES-Repository/main/manifest.json
 
 ## Compatibilidad prevista
@@ -26,7 +27,7 @@ Este repositorio incluye tres entradas en el catálogo para que puedas encontrar
 |---|---:|---|
 | File Transformation | 3.0.3.0 | Permite integrar transformaciones en Jellyfin Web sin modificar los archivos originales del cliente. |
 | Plugin Pages | 3.0.3.0 | Permite añadir NHANDU MOVIES al menú de usuario. Necesita File Transformation. |
-| NHANDU MOVIES | 0.2.0.0 | Administración de etiquetas y catálogo ordenado por año. |
+| NHANDU MOVIES | 1.0.0.0 | Administración de etiquetas y catálogo NHANDU MOVIES. |
 
 Los dos primeros son complementos de terceros desarrollados por **IAmParadox27**. Sus paquetes se descargan directamente de sus publicaciones originales de GitHub; este repositorio no vuelve a empaquetarlos ni modifica sus binarios.
 
@@ -47,7 +48,7 @@ Puedes instalar los tres antes de reiniciar Jellyfin. Cuando los tres aparezcan 
 4. Instala los tres complementos siguiendo el orden anterior.
 5. Reinicia Jellyfin una vez, cuando hayas terminado las tres instalaciones.
 
-La publicación actual es una versión de pruebas. Antes de instalar en el servidor principal, realiza una copia de seguridad de la configuración. No cambies la imagen Docker, los volúmenes ni los archivos multimedia.
+La publicación 1.0.0.0 es una primera versión estable preparada para pruebas controladas. Antes de instalar en el servidor principal, realiza una copia de seguridad de la configuración. No cambies la imagen Docker, los volúmenes ni los archivos multimedia.
 
 ## Qué modifica NHANDU MOVIES
 
