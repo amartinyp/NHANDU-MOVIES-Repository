@@ -1,0 +1,20 @@
+[
+  {
+    "category": "General",
+    "guid": "8c27a5ef-7b35-4bd4-a2c4-76b4a6d1f203",
+    "name": "NHANDU MOVIES",
+    "description": "Etiquetas promocionales y catálogo personalizado para Jellyfin Web. File Transformation y Plugin Pages son dependencias opcionales para activar las integraciones visuales completas.",
+    "owner": "NHANDU AIRSOFT",
+    "overview": "Organiza el catálogo de Jellyfin con etiquetas promocionales y ordenación por año.",
+    "versions": [
+      {
+        "version": "0.2.0.0",
+        "changelog": "Primera versión de pruebas para Jellyfin Server 12.2.0. Incluye administración de etiquetas, asignaciones y catálogo NHANDU MOVIES. Las integraciones visuales del cliente web requieren File Transformation y Plugin Pages compatibles.",
+        "targetAbi": "12.2.0.0",
+        "sourceUrl": "https://github.com/amartinyp/NHANDU-MOVIES-Repository/releases/download/v0.2.0.0/NHANDU-MOVIES-0.2.0.0.zip",
+        "checksum": "6afbbcc1ee0549f77a70bb62dc4c6541",
+        "timestamp": "2026-11-16 19:02:00"
+      }
+    ]
+  }
+]
