@@ -116,6 +116,14 @@
         "sourceUrl": "https://raw.githubusercontent.com/amartinyp/NHANDU-MOVIES-Repository/v1.0.6.0/NHANDU-MOVIES-1.0.6.0.zip",
         "checksum": "1d146f50de51cee37806f5aea4b97f06",
         "timestamp": "2026-11-17T01:00:00Z"
+      },
+      {
+        "version": "1.0.7.0",
+        "changelog": "Corrige la integración del frontend para mostrar etiquetas en tarjetas de Jellyfin 12.2 aunque no incluyan el atributo data-type.",
+        "targetAbi": "12.2.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/amartinyp/NHANDU-MOVIES-Repository/v1.0.7.0/NHANDU-MOVIES-1.0.7.0.zip",
+        "checksum": "756643bd9bbca9675c17de7c17bf3a33",
+        "timestamp": "2026-11-17T02:00:00Z"
       }
     ]
   }
