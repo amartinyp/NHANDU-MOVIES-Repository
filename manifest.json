@@ -100,6 +100,14 @@
         "sourceUrl": "https://raw.githubusercontent.com/amartinyp/NHANDU-MOVIES-Repository/v1.0.4.0/NHANDU-MOVIES-1.0.4.0.zip",
         "checksum": "b936392cdc1531d4a73838223d20dcea",
         "timestamp": "2026-11-17T00:28:53Z"
+      },
+      {
+        "version": "1.0.5.0",
+        "changelog": "Corrección del catálogo: carga secuencial del cliente JavaScript antes de la página y compatibilidad con ApiClient cuando Jellyfin inserta el catálogo en un marco interno.",
+        "targetAbi": "12.2.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/amartinyp/NHANDU-MOVIES-Repository/v1.0.5.0/NHANDU-MOVIES-1.0.5.0.zip",
+        "checksum": "35b5acc3c1e6f185398bf13ef48c007f",
+        "timestamp": "2026-11-17T00:45:00Z"
       }
     ]
   }
