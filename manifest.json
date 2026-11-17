@@ -84,6 +84,14 @@
         "sourceUrl": "https://raw.githubusercontent.com/amartinyp/NHANDU-MOVIES-Repository/v1.0.2.0/NHANDU-MOVIES-1.0.2.0.zip",
         "checksum": "21957c4c10d22ac6007515265644521f",
         "timestamp": "2026-11-17T00:03:31Z"
+      },
+      {
+        "version": "1.0.3.0",
+        "changelog": "Inicialización del catálogo desde el script global de Jellyfin Web para que funcione cuando la página se inserta dinámicamente en el panel de administración.",
+        "targetAbi": "12.2.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/amartinyp/NHANDU-MOVIES-Repository/v1.0.3.0/NHANDU-MOVIES-1.0.3.0.zip",
+        "checksum": "d4df8558dd04da913d187f2280a5bde8",
+        "timestamp": "2026-11-17T00:13:24Z"
       }
     ]
   }
