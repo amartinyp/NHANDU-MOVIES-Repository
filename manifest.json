@@ -92,6 +92,14 @@
         "sourceUrl": "https://raw.githubusercontent.com/amartinyp/NHANDU-MOVIES-Repository/v1.0.3.0/NHANDU-MOVIES-1.0.3.0.zip",
         "checksum": "d4df8558dd04da913d187f2280a5bde8",
         "timestamp": "2026-11-17T00:13:24Z"
+      },
+      {
+        "version": "1.0.4.0",
+        "changelog": "Corrección de caché: las URLs de los scripts web incluyen la versión para forzar la carga del código nuevo detrás de proxies y navegadores con caché.",
+        "targetAbi": "12.2.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/amartinyp/NHANDU-MOVIES-Repository/v1.0.4.0/NHANDU-MOVIES-1.0.4.0.zip",
+        "checksum": "b936392cdc1531d4a73838223d20dcea",
+        "timestamp": "2026-11-17T00:28:53Z"
       }
     ]
   }
