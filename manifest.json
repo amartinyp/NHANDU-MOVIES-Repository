@@ -76,6 +76,14 @@
         "sourceUrl": "https://raw.githubusercontent.com/amartinyp/NHANDU-MOVIES-Repository/v1.0.1.0/NHANDU-MOVIES-1.0.1.0.zip",
         "checksum": "9a79f36a553c50885e946c407809fb5d",
         "timestamp": "2026-11-16T23:41:13Z"
+      },
+      {
+        "version": "1.0.2.0",
+        "changelog": "Corrección definitiva de la página del catálogo: la lógica se sirve como JavaScript externo para que Jellyfin Web la ejecute correctamente al insertar la página de administración.",
+        "targetAbi": "12.2.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/amartinyp/NHANDU-MOVIES-Repository/v1.0.2.0/NHANDU-MOVIES-1.0.2.0.zip",
+        "checksum": "21957c4c10d22ac6007515265644521f",
+        "timestamp": "2026-11-17T00:03:31Z"
       }
     ]
   }

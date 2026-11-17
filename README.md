@@ -4,11 +4,11 @@ Repositorio público de distribución del complemento **NHANDU MOVIES / Jellyfin
 
 ## Estado
 
-**Versión estable publicada: 1.0.1.0.**
+**Versión estable publicada: 1.0.2.0.**
 
-- Tag: https://github.com/amartinyp/NHANDU-MOVIES-Repository/tree/v1.0.1.0
-- Paquete Jellyfin directo: `NHANDU-MOVIES-1.0.1.0.zip`
-- Bundle manual separado: `NHANDU-MOVIES-1.0.1.0-manual-installer.zip` (generado por CI)
+- Tag: https://github.com/amartinyp/NHANDU-MOVIES-Repository/tree/v1.0.2.0
+- Paquete Jellyfin directo: `NHANDU-MOVIES-1.0.2.0.zip`
+- Bundle manual separado: `NHANDU-MOVIES-1.0.2.0-manual-installer.zip` (generado por CI)
 - Manifiesto del repositorio: https://raw.githubusercontent.com/amartinyp/NHANDU-MOVIES-Repository/main/manifest.json
 
 ## Compatibilidad prevista
@@ -27,7 +27,7 @@ Este repositorio incluye tres entradas en el catálogo para que puedas encontrar
 |---|---:|---|
 | File Transformation | 3.0.3.0 | Permite integrar transformaciones en Jellyfin Web sin modificar los archivos originales del cliente. |
 | Plugin Pages | 3.0.3.0 | Permite añadir NHANDU MOVIES al menú de usuario. Necesita File Transformation. |
-| NHANDU MOVIES | 1.0.1.0 | Administración de etiquetas y catálogo NHANDU MOVIES. |
+| NHANDU MOVIES | 1.0.2.0 | Administración de etiquetas y catálogo NHANDU MOVIES. |
 
 Los dos primeros son complementos de terceros desarrollados por **IAmParadox27**. Sus paquetes se descargan directamente de sus publicaciones originales de GitHub; este repositorio no vuelve a empaquetarlos ni modifica sus binarios.
 
